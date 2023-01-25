@@ -31,16 +31,6 @@ CREATE TABLE favoriteRover (
     FOREIGN KEY (userId) REFERENCES user(id)	
 );
 
-CREATE TABLE searchHistory (
-	id INT NOT NULL AUTO_INCREMENT,
-    searchString VARCHAR(100),
-    userId INT NOT NULL,
-    PRIMARY KEY(id),
-    FOREIGN KEY (userId) REFERENCES user(id)	
-);
-
 insert into user (firstName, lastName, email, phone, userName, password) values ('Adam', 'Rolain', 'AdamRolain@RocketMortage.com', '8888888888', 'ARolain', 'dog1234');
 insert into user (firstName, lastName, email, phone, userName, password) values ('Jessica', 'Miller-Nims', 'JessicaMiller-Nims@RocketMortage.com', '9999999999', 'JMiller-Nims', 'dog1234');
 insert into user (firstName, lastName, email, phone, userName, password) values ('Todd', 'Fecto', 'ToddFecto@RocketMortage.com', '1111111111', 'TFecto', 'dog1234');
-
-select * from user;

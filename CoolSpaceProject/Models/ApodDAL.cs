@@ -28,21 +28,21 @@ namespace CoolSpaceProject.Models
         //READ
         public static async Task<Apod> GetAPOD()
         {
-            var response = await GetHttpClient().GetAsync("/planetary/apod?api_key=AhkPJXB4fyYZfBLWbVJBv5HxNDZVUUb5ceAaC88r&thumbs=true");
+            var response = await GetHttpClient().GetAsync("/planetary/apod?api_key=lm9lBypX85VNhjsPJ9RPaeT6G1S83r2dgdZYk3OZ&thumbs=true");
             Apod apodresponse = await response.Content.ReadAsAsync<Apod>();
             return apodresponse;
         }
 
         public static async Task<Apod> GetAPODbyDate(string date)
         {
-            var response = await GetHttpClient().GetAsync($"/planetary/apod?api_key=AhkPJXB4fyYZfBLWbVJBv5HxNDZVUUb5ceAaC88r&date={date}&thumbs=true");
+            var response = await GetHttpClient().GetAsync($"/planetary/apod?api_key=lm9lBypX85VNhjsPJ9RPaeT6G1S83r2dgdZYk3OZ&date={date}&thumbs=true");
             Apod apodresponse = await response.Content.ReadAsAsync<Apod>();
             return apodresponse;
         }
 
         public static async Task<List<Apod>> GetAPODbyRange(string start_date, string end_date)
         {
-            var response = await GetHttpClient().GetAsync($"/planetary/apod?api_key=AhkPJXB4fyYZfBLWbVJBv5HxNDZVUUb5ceAaC88r&start_date={start_date}&end_date={end_date}&thumbs=true");
+            var response = await GetHttpClient().GetAsync($"/planetary/apod?api_key=lm9lBypX85VNhjsPJ9RPaeT6G1S83r2dgdZYk3OZ&start_date={start_date}&end_date={end_date}&thumbs=true");
             List<Apod> apodresponse = await response.Content.ReadAsAsync<List<Apod>>();
             return apodresponse;
         }

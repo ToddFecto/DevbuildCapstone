@@ -30,6 +30,11 @@
           </thead>
           <tbody>
             <tr class="table-secondary border-primary">
+              <td>Perseverance</td>
+              <td>February 18th, 2021</td>
+              <td>Present</td>
+            </tr>
+            <tr class="table-secondary border-primary">
               <td>Curiosity</td>
               <td>August 5th, 2012</td>
               <td>Present</td>
@@ -80,11 +85,12 @@
   <div class="container move-apods-down">
     <div class="row">
       <div class="col-md-3 offset-md-2">
-        <ngb-datepicker #dp [(ngModel)]="model" class="datepicker" [minDate]="{year: 2000, month: 1, day: 1}" [maxDate]="{year: 2021, month: 12, day: 31}"></ngb-datepicker>
+        <ngb-datepicker #dp [(ngModel)]="model" class="datepicker" [minDate]="{year: 2000, month: 1, day: 1}" [maxDate]="{year: 2022, month: 12, day: 31}"></ngb-datepicker>
       </div>
       <div class="col-md-3 dropdown-position">
         <label for="rover" class="paragraph"><h5>Select a Rover</h5></label><br/>
         <select [(ngModel)]="roverName" name="rover" id="rover" class="dropdown">
+          <option value="perseverance">Perseverance</option>
           <option value="curiosity">Curiosity</option>
           <option value="spirit">Spirit</option>
           <option value="opportunity">Opportunity</option>

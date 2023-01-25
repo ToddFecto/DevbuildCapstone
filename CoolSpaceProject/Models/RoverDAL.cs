@@ -32,7 +32,7 @@ namespace CoolSpaceProject.Models
 
         public static async Task<MarsRoverResponse> GetAllRoverPhotosbyEarthDate(string earth_date, string roverName)
         {
-            var response = await GetHttpClient().GetAsync($"/mars-photos/api/v1/rovers/{roverName}/photos?api_key=AhkPJXB4fyYZfBLWbVJBv5HxNDZVUUb5ceAaC88r&camera=FHAZ&page=1&earth_date={earth_date}");
+            var response = await GetHttpClient().GetAsync($"/mars-photos/api/v1/rovers/{roverName}/photos?api_key=lm9lBypX85VNhjsPJ9RPaeT6G1S83r2dgdZYk3OZ&camera=FHAZ&page=1&earth_date={earth_date}");
             MarsRoverResponse roverresponse = await response.Content.ReadAsAsync<MarsRoverResponse>();
             return roverresponse;
         }

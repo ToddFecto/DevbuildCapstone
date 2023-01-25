@@ -25,7 +25,7 @@ namespace CoolSpaceProject.Models
         // READ
         public static async Task<TechTransferResponse> SearchPatents(string search)
         {
-            var response = await GetHttpClient().GetAsync($"/techtransfer/patent/?${search}&api_key=AhkPJXB4fyYZfBLWbVJBv5HxNDZVUUb5ceAaC88r");
+            var response = await GetHttpClient().GetAsync($"/techtransfer/patent/?${search}&api_key=lm9lBypX85VNhjsPJ9RPaeT6G1S83r2dgdZYk3OZ");
             TechTransferResponse roverresponse = await response.Content.ReadAsAsync<TechTransferResponse>();
             return roverresponse;
         }

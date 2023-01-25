@@ -1,0 +1,12 @@
+Our app backend is built using four separate controllers for each of the sections of our application:
+APOD, MarsRover, TechTransfer, and User.
+There four corresponding DALS (data access layers) to tie the front-end to the backend database - APODDAL, RoverDAL, TechTransferDAL, and UserDAL.
+On the frontend there are four services for our frontend components for APOD, User, Mars Rover, and Tech Transfer.
+
+The components were each broke into a list and single component where the list components provided a APOD Type that encompasses the data that is passed into the single component based on whether the APOD is a single date for today, a specified date, date range and also if they are a regular list or favorite list.
+
+They are presented in a controlled fashion out of the list components to each single component for consistancy using that APOD type.
+
+The three other components are built on a similar architecture.
+Now over to Adam to talk more about our code.
+
